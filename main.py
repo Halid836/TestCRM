@@ -62,7 +62,7 @@ def main():
     if tools == '3':
         print("QR GENERATOR")
         text = input("Text/URL/ Product: ")
-        name = input("name file (not png!): ")
+        name = input("name file (without png!): ")
 
         qrcode.make(text).save(f"{name}.png")
         print(f" {name}.png created")
